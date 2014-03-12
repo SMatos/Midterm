@@ -1,0 +1,121 @@
+/* appy a natural box layout model to all elements */
+*, *:before, *:after {
+-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+img,video{width: auto; max-width: 100%; height: auto; margin: 0 auto 1em;}
+
+/*speakers*/
+img.medium{
+	width: 250px;
+	height: 250px;}
+	img.align-right{
+	display:block;
+	margin: 0px auto;}
+	img.medium{
+		width: 250px
+		height: 250px;
+	}
+	/*end of speakers*/
+
+body{ width:95%;
+	   margin:0 auto; 
+	   background-color: #088A68; <!...backgroundwebcolor-->    	 
+	   
+	   font-size:100%;	
+	   line-height:1.5;
+	   font-family:ariel; 
+}
+.feature{
+  border:1px solid #555;
+  padding: 0.625em; /* 10/16 */
+  margin-bottom: 1.25em;/*20 /16 */
+}
+
+p{ margin-bottom: 1em;}
+
+
+}
+
+.track{ width: 100%; /* 600/800 */
+		background-color: #D1EEEE;
+		padding:10 20%;
+		border:1px solid #666;	clear:both;
+}
+
+.set{ width:50%;
+	  float:left;
+	  padding:0 2%;
+}
+
+h1{ font-size: 3em;
+	line-height: 1.2;
+	
+	margin:0 auto;
+	padding:10 20%;
+	font-family: "Tinos";
+}
+
+h2{ font-size: 2.5em;
+	line-height: 1.2;
+	
+	margin:0 auto;
+	color: #81F7BE;
+	padding:10 20%;
+	font-family: "Fanwood+Text";
+}
+
+h3{ font-size: 1.5em;
+	line-height: 1.4;
+	
+	margin:0 auto;
+	color: #ECF6CE;
+	padding:10 20%;
+	font-family: "Fanwood+Text:400,400italic"
+}
+
+/*NAVIGATION*/
+#main_nav{
+	clear:both;
+}
+#main_nav ul{
+	list-style: none;
+}
+
+#main_nav li a{
+	display: block;
+	color:fff;
+	background-color: #555;
+	text-transform: uppercase;
+	padding: 0.625em; /*10/16 */
+	text-decoration: none;
+	border-bottom: 1px soild #eee;
+	font-weight: 900;
+}
+#main_nav li a:hover{
+	color:#555;
+	background-color: #fff;
+}
+#main_nav li a:active{
+	color:#555;
+	background-color: #f90;
+}
+
+/* menu button */
+.menu a {
+	padding:0.5em 0.625em; /*10/16*/
+	background-color: #555;
+	border-radius: 5px;
+	color: #fff;
+	text-decoration: none;
+}
+
+.menu a:hover{
+	color:#555;
+	background-color: #f90;
+}
+
+.menu{
+	margin-bottom:1em;
+}
+/*END OF NAVGATION/*
