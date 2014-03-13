@@ -5,6 +5,12 @@
 
 img,video{width: auto; max-width: 100%; height: auto; margin: 0 auto 1em;}
 
+/*video*/
+.videoWrapper{
+position:relative;
+padding-bottom: 56.25%; /*16:9 */
+
+
 /*speakers*/
 img.medium{
 	width: 250px;
