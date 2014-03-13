@@ -5,11 +5,6 @@
 
 img,video{width: auto; max-width: 100%; height: auto; margin: 0 auto 1em;}
 
-img,video{
-  width: auto; 
-  max-width: 100%; 
-  height: auto;
-}
 /*video*/
 .videoWrapper{
 position:relative;
