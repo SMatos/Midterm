@@ -82,52 +82,41 @@ h3{ font-size: 1.5em;
 
 /*NAVIGATION*/
 #main_nav{
-clear:both;
+  clear:both;
+  overflow:hidden;
+  background-color: #555;
 }  
 
 #main_nav ul{
-list-style: none;
+  list-style: none;
+}
+
+#main_nav li{
+  float:left;
 }
 
 #main_nav li a{
-display:block;
-color:#fff;
-background-color: #555;
-text-transform: uppercase;
-padding: 0.625em; /* 10/16 */
-text-decoration:none;
-border-bottom: 1px solid #eee;
-font-weight:900;
+  display:block;
+  color:#fff;
+  background-color: #555;
+  text-transform: uppercase;
+  padding: 0.625em 1em; /* 10/16   16/16*/
+  text-decoration:none;
+  font-weight:900;
 }
 
 #main_nav li a:hover{
- color:#555;
-background-color: #fff;
+  color:#555;
+  background-color: #fff;
 }
 
 #main_nav li a:active{
-color:#555;
-background-color: #f90;
+  color:#555;
+  background-color: #f90;
 }  
 
-/* menu button */
-.menu a{
-padding:0.5em 0.625em; /*10/16 */
-background-color: #555;
-background-color: rgba(60,60,60,.6);
-border-radius:5px;
-color: #fff;
-text-decoration:none;
-}
-
-.menu a:hover{
-color:#555;
-background-color: #f90;
-}
-
-.menu{
-margin-bottom:1em;
-position:fixed;
-float: right; 
+#main_nav label{
+  color:#fff;
+  float:left;
 }
 /*END OF NAVGATION/*
