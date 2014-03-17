@@ -7,10 +7,8 @@
      />
      <link href='http://fonts.googleapis.com/css?family=Revalia' rel='stylesheet' type='text/css'>
 
-	<script src="js/script.js"></script>
-</head>
-<body>
-
+	<body>
+<a name="top"></a>
 <header>
 		<img src="http://placehold.it/1200x200" alt="header image" />
 
@@ -44,11 +42,11 @@
 <nav id="main_nav" >
   <ul>
       <li><a href="about.html">about</a></li>
-      <li><a href="/home.html">home</a></li>
-      <li><a href="/schedule.html">schedule</a></li>
-      <li><a href="/sessions.html">sessions</a></li>
-      <li><a href="/speakers.html">speakers</a></li>
-      <li><a href="/videos.html">videos</a></li>
+      <li><a href="index.html">home</a></li>
+      <li><a href="schedule.html">schedule</a></li>
+      <li><a href="sessions.html">sessions</a></li>
+      <li><a href="speakers.html">speakers</a></li>
+      <li><a href="videos.html">videos</a></li>
   </ul>
     </nav> 
 
@@ -60,21 +58,6 @@
 <P> Designed By Sheri Matos 2014</p>
 </footer>
 
-     <!--NAVIGATION JAVASCRIPT-->
-
-<script>
-    /*note, this requires jQuery to work. It could be written without jQuery */
-$(document).ready(function(){
-$("nav select").change(function() {
-   /* window.location = $(this).find("option:selected").val();*/ 
-    var loc = $(this).find("option:selected").val();
-    document.location.href = loc;
-    console.log('changed',loc);
-  });
-});
-</script>
-
-  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-   <!--END OF NAVIGATION SCRIPT-->
+     
 </body>
 </html>

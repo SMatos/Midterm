@@ -62,10 +62,10 @@ p{ margin-bottom: 1em;}
 		border:1px solid #666;	clear:both;
 }
 
-.set{ width:50%;
+/*.set{ width:50%;
 	  float:left;
 	  padding:0 2%;
-}
+}*/
 
 h1{ font-size: 3em;
 	line-height: 1.2;
@@ -93,43 +93,63 @@ h3{ font-size: 1.5em;
 	font-family: "Fanwood+Text:400,400italic"
 }
 
-/*NAVIGATION*/
+/* ============================
+* NAVIGATION 
+* Modified from: http://webdesign.tutsplus.com/tutorials/   htmlcss-tutorials/a-simple-responsive-mobile-first-navigation/
+* =============================*/  
+
 #main_nav{
-  clear:both;
-  overflow:hidden;
-  background-color: #555;
+clear:both;
 }  
 
 #main_nav ul{
-  list-style: none;
-}
-
-#main_nav li{
-  float:left;
+list-style: none;
 }
 
 #main_nav li a{
-  display:block;
-  color:#fff;
-  background-color: #555;
-  text-transform: uppercase;
-  padding: 0.625em 1em; /* 10/16   16/16*/
-  text-decoration:none;
-  font-weight:900;
+display:block;
+color:#fff;
+background-color: #555;
+text-transform: uppercase;
+padding: 0.625em; /* 10/16 */
+text-decoration:none;
+border-bottom: 1px solid #eee;
+font-weight:900;
 }
 
 #main_nav li a:hover{
-  color:#555;
-  background-color: #fff;
+ color:#555;
+background-color: #fff;
 }
 
 #main_nav li a:active{
-  color:#555;
-  background-color: #f90;
+color:#555;
+background-color: #f90;
 }  
 
-#main_nav label{
-  color:#fff;
-  float:left;
+/* style link for current page */
+#main_nav li.current a{
+	background-color: orange;
+}
+
+/* menu button */
+.menu a{
+padding:0.5em 0.625em; /*10/16 */
+background-color: #555;
+background-color: rgba(60,60,60,.6);
+border-radius:5px;
+color: #fff;
+text-decoration:none;
+}
+
+.menu a:hover{
+color:#555;
+background-color: #f90;
+}
+
+.menu{
+margin-bottom:1em;
+/*position:fixed;*/
+/*float: right; */
 }
 /*END OF NAVGATION/*
