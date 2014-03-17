@@ -13,14 +13,13 @@
 <div class="container">
      <header>
           <img src="http://placehold.it/1200x200" alt="header image" />
-          <nav>
-               <ul>
-                    <li><a href="">home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Sessions</a><l>
-                    <li><a href="" class="current">Schedule</a><li>
-               </ul>
-          </nav>
+          
+          <!--NAVIGATION-->
+	<div class="menu">
+    		<a href="#main_nav">Menu</a>
+		</div>
+	<!--END OF NAVIGATION-->
+	
           </header>
 
           <div class="menu">
@@ -109,10 +108,41 @@
      <li>Closing Remarks</li>
      room: RICHARD HARRIS TERRACE
 </ul>
+
+<!--NAVIGATION-->
+<a name="main_nav"></a> 
+<nav id="main_nav" >
+  <ul>
+      <li><a href="about.html">about</a></li>
+      <li><a href="/home.html">home</a></li>
+      <li><a href="/schedule.html">schedule</a></li>
+      <li><a href="/sessions.html">sessions</a></li>
+      <li><a href="/speakers.html">speakers</a></li>
+      <li><a href="/videos.html">videos</a></li>
+  </ul>
+    </nav> 
+
+		<!--END OF NAVIGATION-->
+
 <footer>
 <p>&copy;BMCC</p>
 <P> Designed By Sheri Matos 2014</p>
 </footer>
+
+<!--NAVIGATION JAVASCRIPT-->
+
+<script>
+    /*note, this requires jQuery to work. It could be written without jQuery */
+$(document).ready(function(){
+$("nav select").change(function() {
+   /* window.location = $(this).find("option:selected").val();*/ 
+    var loc = $(this).find("option:selected").val();
+    document.location.href = loc;
+    console.log('changed',loc);
+  });
+});
+</script>
+<!--END OF NAVIGATION SCRIPT-->
 
 </body>
 </html>
