@@ -6,10 +6,23 @@
 img,video{width: auto; max-width: 100%; height: auto; margin: 0 auto 1em;}
 
 /*video*/
-.html5wrapper{
-	width:75%;
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    /* if your video is 4:3 ratio then use the padding-bottom below:*/
+    /*padding-bottom: 75%;*/ /* 4:3 */
+  
+    padding-top: 25px; /* may need to adjust depending on the size of the player controls of the service you use */
+    height: 0;
 }
-
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/* end of video*/
 
 /*speakers*/
 img.medium{
