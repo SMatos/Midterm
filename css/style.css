@@ -82,46 +82,52 @@ h3{ font-size: 1.5em;
 
 /*NAVIGATION*/
 #main_nav{
-	clear:both;
-}
+clear:both;
+}  
+
 #main_nav ul{
-	list-style: none;
+list-style: none;
 }
 
 #main_nav li a{
-	display: block;
-	color:fff;
-	background-color: #555;
-	text-transform: uppercase;
-	padding: 0.625em; /*10/16 */
-	text-decoration: none;
-	border-bottom: 1px soild #eee;
-	font-weight: 900;
-}
-#main_nav li a:hover{
-	color:#555;
-	background-color: #fff;
-}
-#main_nav li a:active{
-	color:#555;
-	background-color: #f90;
+display:block;
+color:#fff;
+background-color: #555;
+text-transform: uppercase;
+padding: 0.625em; /* 10/16 */
+text-decoration:none;
+border-bottom: 1px solid #eee;
+font-weight:900;
 }
 
+#main_nav li a:hover{
+ color:#555;
+background-color: #fff;
+}
+
+#main_nav li a:active{
+color:#555;
+background-color: #f90;
+}  
+
 /* menu button */
-.menu a {
-	padding:0.5em 0.625em; /*10/16*/
-	background-color: #555;
-	border-radius: 5px;
-	color: #fff;
-	text-decoration: none;
+.menu a{
+padding:0.5em 0.625em; /*10/16 */
+background-color: #555;
+background-color: rgba(60,60,60,.6);
+border-radius:5px;
+color: #fff;
+text-decoration:none;
 }
 
 .menu a:hover{
-	color:#555;
-	background-color: #f90;
+color:#555;
+background-color: #f90;
 }
 
 .menu{
-	margin-bottom:1em;
+margin-bottom:1em;
+position:fixed;
+float: right; 
 }
 /*END OF NAVGATION/*
