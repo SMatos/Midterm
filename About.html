@@ -6,7 +6,9 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css"
 	/>
 	<link href='http://fonts.googleapis.com/css?family=Revalia' rel='stylesheet' type='text/css'>
-
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="js/script.js"></script>
+	
 </head>
 <body>
 <a name="top"></a>
@@ -160,6 +162,18 @@ Check the MTA's web site for the latest information.</p>
 <P> Designed By Sheri Matos 2014</p>
 </footer>
 
+
+<script>
+    /*note, this requires jQuery to work. It could be written without jQuery */
+$(document).ready(function(){
+$("nav select").change(function() {
+   /* window.location = $(this).find("option:selected").val();*/ 
+    var loc = $(this).find("option:selected").val();
+    document.location.href = loc;
+    console.log('changed',loc);
+  });
+});
+</script>
 
 </body>
 </html>
